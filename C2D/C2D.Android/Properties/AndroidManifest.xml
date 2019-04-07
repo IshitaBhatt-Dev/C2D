@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.C2D" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+	<uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
+	<uses-permission android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+	<uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+	<uses-permission android:name="android.permission.BIND_CHOOSER_TARGET_SERVICE" />
+	<uses-permission android:name="android.permission.BIND_CARRIER_SERVICES" />
+	<uses-permission android:name="android.permission.BIND_CARRIER_MESSAGING_SERVICE" />
+	<uses-permission android:name="android.permission.BIND_AUTOFILL_SERVICE" />
+	<uses-permission android:name="android.permission.BIND_APPWIDGET" />
+	<uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+	<uses-permission android:name="android.permission.BATTERY_STATS" />
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+	<uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_GSERVICES" />
+	<uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+	<uses-permission android:name="android.permission.WRITE_PROFILE" />
+	<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+	<uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<application android:label="C2D.Android"></application>
+</manifest>

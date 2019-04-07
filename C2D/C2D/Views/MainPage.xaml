@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:C2D"
+             x:Class="C2D.RequestsOfRecipientView">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0" Grid.Row="0">
+
+
+                    <Label Text="Login"/>
+
+
+                </StackLayout>
+
+                <StackLayout Grid.Row="1" Margin="20,0,20,0">
+
+
+                    <Image Source="E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\Resources\drawable\C2DLogo.png" HeightRequest="70" VerticalOptions="EndAndExpand"/>
+
+                    <Label Grid.Row="1" Grid.Column="1" Text="Are you a donor?"></Label>
+                    <Switch  Grid.Row="1" Grid.Column="2" x:Name="donorLoginSwitch" Toggled="switch_Toggled" />
+
+                    <Entry Grid.Row="2" x:Name="userName" Placeholder="UserName" PlaceholderColor="#bababa" FontSize="16"/>
+                    <Entry Grid.Row="3" x:Name="password" IsPassword="true" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16"/>
+                    <Button Text="LogIn" BackgroundColor="#3897f0" Clicked="btnLoginClicked" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="4"/>
+                    <Label  Grid.Row="5" VerticalOptions="Center" x:Name="lblLogin" TextColor="Red"/>
+
+
+                    <Label Grid.Row="6" Grid.Column="1" Text="Are you a donor?"/>
+                    <Switch Grid.Row="6" Grid.Column="3" x:Name="donorSwitch" Toggled="switch_Toggled1" />
+
+
+                </StackLayout>
+                <Button Grid.Row="2" Text="Dont'Have Account Login? SignUp" Clicked="BtnNvgtRegistration"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

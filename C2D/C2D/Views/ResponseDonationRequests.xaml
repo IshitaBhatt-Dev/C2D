@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C2D.Views.ResponseDonationRequests">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0" Grid.Row="0">
+
+
+                <Label Text="Response Donation Request:"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Margin="20,0,20,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+
+
+                            <Label Grid.Row="0"  Grid.Column="0" Text="Title" FontSize="16"/>
+                            <Label Grid.Row="0"  Grid.Column="1" x:Name="title" FontSize="16"/>
+
+                            <Label Grid.Row="1"  Grid.Column="0"  Text="description" FontSize="16"/>
+                            <Label Grid.Row="1" Grid.Column="1" x:Name="description" FontSize="16"/>
+
+                            <Label Grid.Row="2"  Grid.Column="0"  Text="Recipient's Name" FontSize="16"/>
+                            <Label Grid.Row="2" Grid.Column="1" x:Name="fullName"  FontSize="16"/>
+
+                    <Label Text="Response Donation Request:" VerticalOptions="Center" Grid.Row="3"/>
+                    <Entry x:Name="resDescription" Placeholder="Comment" PlaceholderColor="#bababa" FontSize="16" Grid.Row="4"/>
+                   
+                    <Button Text="Submit" BackgroundColor="#3897f0" Clicked="btnSubmitResponse" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3"/>
+                           
+                </Grid>
+
+            </StackLayout>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

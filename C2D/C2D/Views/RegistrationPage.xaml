@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C2D.RegistrationPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="ParentRegistrationLayout">
+            <Label Text="Registration" VerticalOptions="Center" TextColor="Black" />
+            <StackLayout>
+                <Entry Placeholder="Full Name"/>
+                <Button Text="Register"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

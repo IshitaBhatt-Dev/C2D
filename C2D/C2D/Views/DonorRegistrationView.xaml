@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C2D.Views.DonorRegistrationView">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid BackgroundColor="White">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0" Grid.Row="0">
+
+
+                <Label Text="Donor Registration"/>
+
+
+            </StackLayout>
+
+            <Grid Grid.Row="1" Margin="20,0,20,0">
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Image Source="Samir.png" HeightRequest="70" VerticalOptions="EndAndExpand"/>
+                <Entry Grid.Row="1" x:Name="firstName" Placeholder="First Name" PlaceholderColor="#bababa" FontSize="16"/>
+                <Entry Grid.Row="2"  x:Name="lastName" Placeholder="Last Name" PlaceholderColor="#bababa" FontSize="16"/>
+                <Entry Grid.Row="3"  x:Name="email" Placeholder="Email" PlaceholderColor="#bababa" FontSize="16"/>
+                <Entry Grid.Row="4"  x:Name="contact" Placeholder="Contact Number" PlaceholderColor="#bababa" FontSize="16"/>
+                <Entry Grid.Row="5"  x:Name="userName" Placeholder="UserName" PlaceholderColor="#bababa" FontSize="16"/>
+                <Entry Grid.Row="6"  x:Name="password" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16"/>
+                <Entry Grid.Row="7"  x:Name="confirmPassword" Placeholder="Enter Password Again" PlaceholderColor="#bababa" FontSize="16"/>
+                <Label Grid.Row="8" x:Name="lblConfirmPassword" IsVisible="False" FontSize="16" TextColor="Red"/>
+                <Button Text="Register" BackgroundColor="#3897f0" Clicked="BtnRegister_Clicked" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="9"/>
+
+
+            </Grid>
+
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
