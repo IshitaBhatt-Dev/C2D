@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C2D.Views.ResponseFromDonorToRecipientView">
+    <ContentPage.Content>
+            <ScrollView>
+                <Grid BackgroundColor="White">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0" Grid.Row="0">
+
+
+                        <Label Text="Responses From Donors"/>
+
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1" Margin="20,0,20,0">
+
+                    <ListView x:Name="ListviewResponse" HorizontalOptions="Center"  HasUnevenRows="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding title}" FontSize="Small" ></Label>
+                                        <Label Text="{Binding description}" x:Name="description" FontSize="Small"></Label>
+                                        <Label Text="{Binding DonorUserName}" FontSize="Small"></Label>
+                    
+                                    </StackLayout>
+
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+                 
+                </Grid>
+            </ScrollView>
+        </ContentPage.Content>
+
+    </ContentPage>
