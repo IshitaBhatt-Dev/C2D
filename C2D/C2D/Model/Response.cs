@@ -11,8 +11,11 @@ namespace C2D.Model
         [BsonId]
         public BsonObjectId Id { get; set; }
         public string RequestId { get; set; }
-        public string ResponseDescription { get; set; }
+        public string description { get; set; }
         public string DonorUserName { get; set; }
+        public string RecipientUserName { get; set; }
+        public int status { get; set; }
+
 
     }
 }

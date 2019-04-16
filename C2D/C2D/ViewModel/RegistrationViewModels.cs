@@ -100,6 +100,16 @@ namespace C2D.ViewModel
 
             return query;
         }
+        public async Task<List<Donors>> SearchByDonorUserName(string username)
+        {
+            var collection = db.GetCollection<Donors>("Donors");
+            var results = await collection
+                            .AsQueryable()
+                            .Where(tdi => tdi.UserName.Contains(username))
+                            .ToListAsync();
+
+            return results;
+        }
 
     }
 }

@@ -3,8 +3,11 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using MongoDB.Driver.Linq;
 using System.Security.Authentication;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace C2D.ViewModel
 {
@@ -13,7 +16,7 @@ namespace C2D.ViewModel
         private IMongoDatabase db;
         private MongoClient client;
         private MongoClientSettings settings;
-
+        private IMongoCollection<Response> collection;
         public ResponseRequestViewModel()
         {
             string connectionString =
@@ -25,6 +28,7 @@ namespace C2D.ViewModel
               new SslSettings() { EnabledSslProtocols = SslProtocols.Tls12 };
             client = new MongoClient(settings);
             db = client.GetDatabase("C2D");
+            collection = db.GetCollection<Response>("Response");
         }
         public void AddNewRequestResponse(Response request)
         {
@@ -32,13 +36,47 @@ namespace C2D.ViewModel
             var document = new BsonDocument
                 {
                     { "RequestId",request.RequestId},
-                    { "description",request.ResponseDescription},
-                     { "DonorUserName",request.DonorUserName},
-                
+                    { "description",request.description},
+                    { "DonorUserName",request.DonorUserName},
+                    {"RecipientUserName",request.RecipientUserName },
+                {"status",request.status}
                 };
 
             collection.InsertOne(document);
 
         }
+
+        public async Task<List<Response>> SearchByRecipientUserName(string username)
+        {
+            var results = await collection
+                            .AsQueryable()
+                            .Where(tdi => tdi.RecipientUserName.Contains(username))
+                            .ToListAsync();
+
+            var reqCollection = db.GetCollection<DonationRequests>("DonationRequests");
+
+       
+            return results;
+        }
+        public void SetStatus(string description1, int status1)
+        {
+            ResponseRequestViewModel listDonationRequestsViewModel = new ResponseRequestViewModel();
+            Response dr = new Response
+            {
+
+                status = status1
+            };
+            UpdateResponseItem(dr, description1);
+        }
+        public void UpdateResponseItem(Response dr1,string description)
+        {
+            var collection = db.GetCollection<Response>("Response");
+            var filter = Builders<Response>.Filter.Eq(s => s.description,description);
+            var update = Builders<Response>.Update
+                .Set(s => s.status, dr1.status);
+
+            collection.UpdateOneAsync(filter, update);
+        }
+
     }
 }

@@ -14,38 +14,40 @@ namespace C2D.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ResponseDonationRequests : ContentPage
     {
-        string[] arrayData;
-        string id;
-        string userName;
+  
+        string reqId;
+        string recipientUserName;
 
         public ResponseDonationRequests()
         {
             InitializeComponent();
             getDetails();
         }
-        public ResponseDonationRequests(string data)
+        public ResponseDonationRequests(string title1,string description1,string recipientUsername1,string reqId1)
         {
-            InitializeComponent();
-           
-            arrayData = data.Split(',');
-            id = arrayData[0];
-           userName = arrayData[1];
-            getDetails();
 
+            InitializeComponent();
+            title.Text = title1;
+            description.Text = description1;
+            recipientUserName = recipientUsername1;
+            reqId = reqId1;
+            getDetails();
+           
 
         }
-        public async void getDetails()
+
+        public  void getDetails()
         {
             ListDonationRequestsViewModel list = new ListDonationRequestsViewModel();
-            var requestDetails = await list.SearchById(id);
+           // var requestDetails = await list.SearchById(id);
 
             RegistrationViewModels recipient = new RegistrationViewModels();
           
 
-            title.Text = requestDetails.title;
-            description.Text = requestDetails.description;
+            //title.Text = requestDetails.title;
+            //description.Text = requestDetails.description;
 
-            fullName.Text = userName;
+            fullName.Text = Application.Current.Properties["UserName"].ToString(); ;
                 
         }
 
@@ -54,11 +56,12 @@ namespace C2D.Views
             ResponseRequestViewModel responseRequestViewModel = new ResponseRequestViewModel();
             Response response = new Response();
 
-            response.ResponseDescription = description.Text;
-            response.RequestId = description.Text;
-            response.DonorUserName = Application.Current.Properties["UserName"].ToString();
-            response.RequestId = id;
+            response.RequestId = reqId;
+            response.description = resDescription.Text;
             
+            response.DonorUserName = Application.Current.Properties["UserName"].ToString();
+            response.RecipientUserName = recipientUserName;
+            response.status = 0;
             responseRequestViewModel.AddNewRequestResponse(response);
             
 

@@ -45,5 +45,9 @@ namespace C2D.Views
             requestStatus = e.Value;
         }
 
+        private void btnViewResponses(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ResponseFromDonorToRecipientView());
+        }
     }
 }

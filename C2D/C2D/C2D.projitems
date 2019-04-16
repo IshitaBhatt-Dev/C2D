@@ -57,6 +57,10 @@
       <DependentUpon>ResponseDonationRequests.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ResponseFromDonorToRecipientView.xaml.cs">
+      <DependentUpon>ResponseFromDonorToRecipientView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\UpdateDonationRequest.xaml.cs">
       <DependentUpon>UpdateDonationRequest.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -109,6 +113,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\UpdateDonationRequest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ResponseFromDonorToRecipientView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

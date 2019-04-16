@@ -1,7 +1,3 @@
-E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\bin\Debug\C2D.Android.dll
-E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\bin\Debug\C2D.Android.pdb
-E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\bin\Debug\com.companyname.C2D.apk
-E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\bin\Debug\com.companyname.C2D-Signed.apk
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\res.flag
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\Views\App.xaml.g.cs
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\Views\MainPage.xaml.g.cs
@@ -13,10 +9,15 @@ E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\Views\Li
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\Views\ResponseDonationRequests.xaml.g.cs
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\Views\RequestsOfRecipientView.xaml.g.cs
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\Views\UpdateDonationRequest.xaml.g.cs
+E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\Views\ResponseFromDonorToRecipientView.xaml.g.cs
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\C2D.Android.csproj.CoreCompileInputs.cache
-E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\XamlC.stamp
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\C2D.Android.dll
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\C2D.Android.pdb
+E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\bin\Debug\C2D.Android.dll
+E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\bin\Debug\C2D.Android.pdb
+E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\bin\Debug\com.companyname.C2D.apk
+E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\bin\Debug\com.companyname.C2D-Signed.apk
+E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\XamlC.stamp
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\android\bin\com.companyname.C2D.apk
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\res\layout\tabbar.xml
 E:\Centennial_Sem4\Project2\C2D\C2D\C2D.Android\obj\Debug\MonoAndroid81\res\layout\toolbar.xml

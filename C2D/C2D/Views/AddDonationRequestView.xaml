@@ -27,6 +27,7 @@
                 <Button Text="Add Request" BackgroundColor="#3897f0" Clicked="btnAddNewRequest" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="4"/>
 
                     <Button Text="View Your Requests" BackgroundColor="#3897f0" Clicked="btnViewRequests" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="4"/>
+                    <Button Text="View Donors' Responses" BackgroundColor="#3897f0" Clicked="btnViewResponses" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="5"/>
                     <Label  Grid.Row="5" VerticalOptions="Center" x:Name="lblLogin" TextColor="Red"/>
             </StackLayout>
            

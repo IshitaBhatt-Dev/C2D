@@ -39,9 +39,9 @@ namespace C2D.ViewModel
 
         public async Task<List<DonationRequests>> GetAllItems()
         {
-            
+           
             var allItems = await collaction
-                .Find(new BsonDocument())
+                .AsQueryable()
                 .ToListAsync();
 
             return allItems;
@@ -83,5 +83,6 @@ namespace C2D.ViewModel
              collaction.UpdateOneAsync(filter, update);
         }
 
+       
     }
 }
